@@ -19,3 +19,14 @@ var Hello = {
 }
 
 m.mount(root, Hello)
+
+var Splash = {
+  view: function() {
+    return m("a", {href: "#!/hello"}, "Dive in!")
+  }
+}
+
+m.route(root, "/splash", {
+  "/splash": Splash,
+  "/hello": Hello,
+})

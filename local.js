@@ -10,7 +10,7 @@ m.render(root, [
 var count = 0
 var increment = function() {
   m.request({
-    method: "POST",
+    method: "PUT",
     url: "//rem-rest-api.herokuapp.com/api/tutorial/1",
     body: {count: count + 1},
     withCredentials: true,

@@ -13,7 +13,7 @@ var increment = function() {
     method: "POST",
     url: "//rem-rest-api.herokuapp.com/api/tutorial/1",
     body: {count: count + 1},
-    withCredentials: true.
+    withCredentials: true,
   })
   .then(function(data) {
     count = parseInt(data.count)

@@ -6,3 +6,16 @@ m.render(root, [
     m("button", "This button can be clicked"),
   ])
 ])
+
+var count = 0
+
+var Hello = {
+  view: function() {
+    return m("main", [
+      m("h1", "Count function"),
+      m("button", {onclick: function() {count++}}, count + " clicks"),
+    ])
+  }
+}
+
+m.mount(root, Hello)
